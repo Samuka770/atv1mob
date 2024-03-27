@@ -1,0 +1,144 @@
+body{
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    display: flex;
+    justify-content: space-around;
+}
+
+section{
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+    margin: 0;
+}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input{
+    border: none;
+    border-radius: 4px;
+    background-color: #EEEEEE;
+    box-sizing: border-box;
+}
+
+#meio{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#calcular{
+    cursor: pointer;
+    height: 100px;
+    width: 300px;
+    background-color: purple;
+    border-radius: 5px;
+    color: white;
+    font-size: 50px;
+}
+
+#bloco{
+    display: flex;
+    justify-content: space-around;
+}
+
+.tooltip{
+    position: relative;
+    height: 15px;
+    z-index: 1;
+}
+
+.flex{
+    display: flex;
+}
+
+.tooltiptext{
+    position: absolute;
+    left: 50%;
+    width: 184px;
+    text-wrap: wrap;
+    transform: translateX(-50%);
+    background-color: #000;
+    color: #fff;
+    padding: 5px 2px;
+    border-radius: 7px;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.tooltiptext::before{
+    content: "";
+    position: absolute;
+    left:50%;
+    top: 100%;
+    transform: translateX(-50%);
+    border: 15px solid;
+    border-color: #000 #0000 #0000 #0000;
+}
+
+.tooltip:hover .tooltiptext{
+    top: -650%;
+    visibility: visible;
+    opacity: 1;
+}
+
+.infobtn{
+    z-index: 100;
+}
+
+.tooltip:hover{
+    cursor: pointer;
+    background-color: #000;
+    border-radius: 100%;
+}
+
+.resultados{
+    display: flex;
+    justify-content: space-around;
+}
+
+.titleresultado{
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 130%;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#resultados{
+    display: flex;
+    justify-content: space-around;
+}
+
+table {
+    font-size: 30px;
+    width: 350px;
+    height: 250px;
+    border-radius: 4px;
+    border: 1px solid #5B5B5B;
+}
+
+tbody {
+    display: table-row-group;
+}
+
+tr th {
+    text-align: left;
+    background-color: #470C4D;
+    color: #fff;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/index.css">
+        <title>AtvWeb</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+        <script src="js/jquery.maskMoney.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <h1 class="title">Cálculo de Juros Simples</h1>
+        <section>
+            <p>Fórmula para o calculo: J = C ∙ i ∙ t</p>
+            <br>
+            <br>
+            <div id="bloco">
+                <div class="flex">
+                <p>Valor Inicial</p>
+                <input type="text" name="inputCapitalInicial" id="inputCapitalInicial" placeholder="R$ 0,00" step="0.01" name="quantity" min="0.01">
+            </div>
+            <p>Taxa de Juros</p>
+            <input type="text" id="inputJuros" placeholder="0,00%">
+            <p>Período </p>
+            <input type="number" id="inputPeriodo" placeholder="0" data-gtm-form-interact-field-id="1">
+        </div>
+        <div id="meio">
+        <button id="calcular">CALCULAR</button>
+        </div>
+        <div>
+            <h3 class="titleresultado">Quanto vou receber de juros mensais?</h3>
+            <br>
+            <div id="resultados">
+            <table>
+            <thead>
+            <tr>
+            <th>Evento</th>
+            <th>Valores</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>Total Investido</td>
+            <td id="capital">R$&nbsp;0,00</td>
+            </tr>
+            <tr>
+            <td>Total de juros <span>mensal</span> </td>
+            <td id="juros">R$&nbsp;0,00</td>
+            </tr>
+            <tr>
+            <td>Total</td>
+            <td id="total">R$&nbsp;0,00</td>
+            </tr>
+            </tbody>
+            </table>
+        </div>
+            </div>
+        </section>
+    </body>
+    <script>
+        $(function() {
+          $('#inputCapitalInicial').maskMoney();
+        })
+      </script>
+      <script>
+        $(function() {
+          $('#inputJuros').maskMoney();
+        })
+      </script>
+    <script src="js/index.js"></script>
+</html>
